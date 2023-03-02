@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="header">
+        <image class="header-bg" src="../../images/header-bg.png"></image>
+        <view class="user-box">
+            <view class="avatar-box">
+                <view class="box">
+                    <view>早上好!</view>
+                    <view>肌理肌</view>
+                </view>
+            </view>
+            <view class="notification-box">
+                <view class="message-dot">
+                    <van-icon name="chat-o" size="64rpx" color="red" info="99+" />
+                </view>
+                <view class="bell-dot">
+                    <van-icon name="https://lh1.hetaousercontent.com/img/1cac5a64c4a7d9cf.jpg?thumbnail=true" size="80rpx" />
+                </view>
+
+
+
+            </view>
+        </view>
+    </view>
+    <scroll-view class="category-banner-list" scroll-x>
+        <view style="{{'width:'+(categoryBannerList.length*320)+'rpx'}}">
+            <view class="category-box" wx:for="{{categoryBannerList}}" wx:key="index">
+                <image src="{{item.image}}"></image>
+            </view>
+        </view>
+
+
+
+    </scroll-view>
+
+    
+
+</view>

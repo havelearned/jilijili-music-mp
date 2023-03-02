@@ -1,0 +1,5 @@
+@import "style/variable.scss";
+page {
+    --tabs-bottom-bar-color: #{$parimary-color};
+    --tab-active-text-color: #{$parimary-color};
+}

@@ -1,0 +1,110 @@
+/* pages/login/index.wxss */
+@import '../../style/variable.scss';
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-color: $parimary-color;
+    position: relative;
+
+    .login-form {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 85%;
+        background-color: white;
+        border-radius: 30rpx 30rpx 0px 0px;
+        overflow: hidden;
+
+
+
+        .content {
+            padding: 0 70rpx;
+            .title {
+                margin-top: 84rpx;
+                font-size: 48rpx;
+                color: $parimary-color;
+                letter-spacing: 0;
+                font-weight: 500;
+            }
+            .title-tips {
+                height: 80rpx;
+                font-size: 28rpx;
+                color: ☐#7A869A;
+                letter-spacing: 0;
+                line-height: 40rpx;
+                font-weight: 400;
+                margin-bottom: 50rpx;
+            }
+            .form-item{
+                margin-bottom: 50rpx;
+                .lable{
+                    margin-top: 5rpx;
+                    height:26rpx;
+                    font-family:AppleSymbols;
+                    font-size:28rpx;
+                    color:#C1C7D0;
+                    letter-spacing:0;
+                    font-weight:400;
+                    margin-bottom: 28rpx;
+                }
+                input{
+                   
+                    height:88rpx;
+                    opacity:0.75;
+                    background:#F2F4F7;
+                    box-shadow:inset Opx 2rpx 4rpx Opx rgba(0,0,0,0.04);
+                    border-radius:30rpx;
+                    padding: 0rpx 32rpx ;
+                    .placeholder{
+                        
+                        height:30rpx;
+                        opacity:0.5;
+                        font-size:32rpx;
+                        color:#7A869A;
+                        letter-spacing:0;
+                        font-weight:400;
+                    }
+                }
+            }
+            .forget-password{
+                margin-bottom: 48rpx;
+                font-size:26rpx;
+                color:#0041C4;
+                letter-spacing:0;
+                font-weight: 400;
+            }
+        }
+        button{
+            height:88rpx;
+            background:#0041C4;
+            color: #ffffff;
+            border-radius:20rpx;
+            font-size:16px;
+            letter-spacing:0;
+            text-align:center;
+            font-weight:400;
+        }
+
+        .create-account{
+            width: 100%;
+            margin-top: 260rpx;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size:28rpx;
+            color:#7A869A;
+            Letter-spacing:0;
+            text-align:center;
+            line-height:28rpx;
+            font-weight:400;
+            .action{
+                display: inline;
+                color: $parimary-color;
+            }
+
+        }
+        
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/login/index",
+        "pages/index/index",
+        "pages/search/index",
+        "pages/lib/index"
+       
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "肌理音乐",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#7A869A",
+        "selectedColor": "#7A869A",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "selectedIconPath": "images/home-active.png",
+                "iconPath": "images/home.png",
+                "text": "首页"
+            },
+            {
+                "pagePath":"pages/search/index",
+                "text": "搜索",
+                "iconPath": "images/search.png",
+                "selectedIconPath": "images/search-active.png"
+            },
+            {
+                "pagePath":    "pages/lib/index",
+                "text": "音乐库",
+                "iconPath": "images/lib.png",
+                "selectedIconPath": "images/lib-active.png"
+            }
+
+        ]
+    },
+    "usingComponents": {
+        "van-notify": "@vant/weapp/notify/index"
+      },
+    "permission": {
+        "scope.userLocation": {"desc": "获取用户位置信息"}
+    }
+}

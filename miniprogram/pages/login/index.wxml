@@ -1,0 +1,44 @@
+<!--pages/login/index.wxml-->
+<view class="page">
+    <!-- 在页面内添加对应的节点 -->
+    <view class="login-form">
+        <van-notify id="van-notify" />
+        <van-tabs class="" animated active="{{ active }}" bind:change="onChange">
+            <van-tab title="登录" class="tab">
+                <!-- 常规登录 -->
+                <view class="content">
+                    <view class="title">
+                        登录
+                    </view>
+                    <view class="title-tips">
+                        嗨,你好,欢迎使用肌理音乐
+                    </view>
+                    <view class="form-item">
+                        <!-- <view class="lable">用户名/手机</view>
+                <van-cell-group>
+                    <van-field value="{{ username }}"  placeholder="请输入用户名/手机号码" input-align="center"  />
+                </van-cell-group> -->
+
+
+                        <view class="lable">用户名/手机</view>
+                        <van-field model:value="{{username}}" type="" placeholder="请输入用户名/手机号码" placeholder-class="placeholder" left-icon />
+                    </view>
+                    <view class="form-item">
+                        <view class="lable">密码</view>
+                        <van-field model:value="{{password}}" type="password" placeholder="请输入密码" placeholder-class="placeholder" />
+                    </view>
+                    <view class="forget-password">
+                        忘记密码
+                    </view>
+                    <button type="primary" bindtap="login">登录</button>
+                    <view class="create-account">
+                        没有账号?<view class="action">立即注册</view>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="注册"></van-tab>
+        </van-tabs>
+
+    </view>
+
+</view>
